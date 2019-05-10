@@ -28,15 +28,16 @@ let greeting = function(firstName, lastName) {
 };
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2, 2, add); // 4
+consume(10, 16, multiply); // 160
+consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // ==== Closures ====
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation:
+// Explanation: nestedFunction() exists soley inside the scope of myFunction.
+// It is both declared and called inside that scope (alongside the variable `internal`) so it has ready access to that variable.
 
 const external = "I'm outside the function";
 
