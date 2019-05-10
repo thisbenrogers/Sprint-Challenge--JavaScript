@@ -28,28 +28,41 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between `.forEach` & `.map`. 
 
-2. What is the difference between a function and a method?
+    * *__ANSWER:__*  `.forEach()` mutates the original array, while `.map()` creates a new array.
 
-3. What is closure?
+2. What is the difference between a function and a method? 
+
+    * *__ANSWER:__* Both are functions. To be considered a method, the function must be a property of an object, specifically a function definition.
+
+3. What is closure? 
+
+    * *__ANSWER:__* Closures are functions that reference independent variables, so that the function defined inside of the closure ‘remembers’ it's environment.
 
 4. Describe the four rules of the 'this' keyword.
 
+    * *__ANSWER:__*
+      1. In code at the global level, `this` refers to the global object. In the browser, that's the window. This rule also applys to the value of `this` in a function, unless you're calling the function as a method, or you explicitly change the value of `this`  using .call() or .apply()
+      2. When you call an object method, the value of `this` is the object whose method you called. This applys to event-handlers on element objects too.
+      3. When you call a function with `new`, it creates an empty object and assigns it to `this` in the function. When you refer to `this` in a constructor function, you're refering to the object that `new` created for you.
+      4. When you call a function with `call()`(or `apply()`), `this` is assigned the value of the first argument passed to `call()`(or `apply()`) in the function that was called.
+
 5. Why do we need super() in an extended class?
+    * *__ANSWER:__* The `super()` keyword is used within an object so it can access and work with its parent object's methods.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
@@ -66,7 +79,7 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
